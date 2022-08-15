@@ -121,7 +121,7 @@ class Gastos(QWidget, Pantalla_inicial):
         #Abrira el pdf automaticamente
         select_row = self.tabla_Ventana2.selectedItems()
         if select_row:
-            _id = int(select_row[7].text())
+            _id = select_row[6].text()
         if id == '':
             dialogo = QMessageBox.information(self, "Informacion", "No posee PDF para Motrar")
         else:
